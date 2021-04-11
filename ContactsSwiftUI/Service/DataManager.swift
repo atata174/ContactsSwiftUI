@@ -12,22 +12,23 @@ class DataManager {
     static let shared = DataManager()
     
     var names = [
-        "John", "Aaron", "Tim", "Ted",
-        "Steven", "Sharon", "Nicola",
-        "Allan", "Bruce", "Carl"
+        "Tony", "Natasha", "Clint",
+        "Thor", "Vanda", "Bruce",
+        "Harry", "Stephen", "Loki", "Isaak"
     ]
     
     let surnames = [
-        "Smith", "Dow", "Isaacson", "Pennyworth",
-        "Jankin", "Butler", "Black", "Robertson",
-        "Murphy", "Williams"
+        "Strange", "Rogers", "Potter",
+        "Stark", "Mask", "Kerry", "Barton",
+        "Romanov", "Maksimoff", "Odinson"
     ]
     
     let emails = [
-        "jjjj@mail.ru", "aaaa@mail.ru", "eeee@mail.ru",
-        "hhhh@mail.ru", "wwww@mail.ru", "mmmm@mail.ru",
-        "xxxx@mail.ru", "pppp@mail.ru", "ssss@mail.ru",
-        "llll@mail.ru"
+        "captain_america@gmail.com", "tony@stark.com",
+        "natasha.1928@yandex.ru", "dr.strange@psychology.com",
+        "best.avenger.hawkeye@mail.ru", "unknownperson@asgard.com",
+        "thor_odinson@asgard.com", "mask@elon.com",
+        "bestemail@network.com", "boy.who.lived@hogwarts.com"
     ]
     
     let phones = [
