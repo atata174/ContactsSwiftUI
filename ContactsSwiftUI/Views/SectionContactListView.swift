@@ -8,9 +8,27 @@
 import SwiftUI
 
 struct SectionContactListView: View {
+    
+    let persons = Person.getContactList()
+    
     var body: some View {
-        Text("Sections contact list")
+        List {
+            ForEach(persons) { person in
+                Section(header: Text(person.fullName)) {
+                    HStack {
+                        Image(systemName: "phone").foregroundColor(.blue)
+                        Text(person.phoneNumber)
+                    }
+                    HStack {
+                        Image(systemName: "tray").foregroundColor(.blue)
+                        Text(person.email)
+                    }
+                }
+            }
+        }
     }
+    
+    
 }
 
 struct SectionContactListView_Previews: PreviewProvider {

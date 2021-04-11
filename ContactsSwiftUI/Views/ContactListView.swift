@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct ContactListView: View {
+    
+    let persons = Person.getContactList()
+    
     var body: some View {
-        Text("Contact list")
+        List(persons) { person in
+            NavigationLink(
+                destination: ContactDetailView(person: person)) {
+                ContactRow(person: person)
+            }
+        }
     }
 }
 

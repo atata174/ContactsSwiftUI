@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Person {
-   
+struct Person: Identifiable {
+    
+    let id: Int
     let name: String
     let surname: String
     let email: String
@@ -20,6 +21,7 @@ struct Person {
 }
 
 extension Person {
+    
     static func getContactList() -> [Person] {
         
         var persons: [Person] = []
@@ -31,6 +33,7 @@ extension Person {
         
         for index in 0..<names.count {
             let person = Person(
+                id: Int.random(in: 1...100),
                 name: names[index],
                 surname: surnames[index],
                 email: emails[index],
